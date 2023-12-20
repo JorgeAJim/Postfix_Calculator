@@ -1,0 +1,23 @@
+// $Id: assignment3.mpc 378 2010-02-07 22:09:38Z hillj $
+
+project (assignment3) {
+  exename = assignment3
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+    Main.cpp
+  }
+
+  Template_Files {
+      Fixed_Array.cpp
+    Stack.cpp
+      Array_Base.cpp
+      Array.cpp
+      Queue.cpp
+      Array_Iterator.cpp
+  }
+}
